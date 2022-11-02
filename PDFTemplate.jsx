@@ -1,5 +1,5 @@
 import React from "react";
-import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
+import { Page, Text, View, Document, StyleSheet, Image } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   page: {
@@ -31,6 +31,7 @@ export const PDFTemplate = ({ data }) => {
       <Page wrap>
         {data.map(({ page }) => (
           <View key={page} style={styles.page} break>
+            <Image source={"./react-pdf-logo.png"} />
             <View style={styles.section}>
               <Text>{page}</Text>
               <Text>{page}</Text>
