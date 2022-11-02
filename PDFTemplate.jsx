@@ -6,7 +6,7 @@ export const PDFTemplate = ({ data }) => {
     <Document>
       <Page wrap>
         {data.map(({ page }) => (
-          <View wrap={false}>
+          <View key={page} break>
             <Text>{page}</Text>
           </View>
         ))}
