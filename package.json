@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx babel *.jsx --presets @babel/preset-react -d .build && node .build/index.js",
+    "start": "npx babel *.jsx --presets @babel/preset-react -d .build && node --trace_gc .build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
