@@ -1,3 +1,3 @@
 # pdf-server-example
 
-do `npm install` and `npm start
+do `npm install` and `npm start`
